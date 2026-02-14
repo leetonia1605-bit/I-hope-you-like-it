@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Memories 📸</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="romantic.mp3" type="audio/mpeg">
+</audio>
+
+<h1 class="title fade-in">Our Little Art Gallery 💗</h1>
+
+<div class="gallery fade-in">
+  <img src="images/pic1.jpg" onclick="openViewer(0)">
+  <img src="images/pic2.jpg" onclick="openViewer(1)">
+  <img src="images/pic3.jpg" onclick="openViewer(2)">
+  <img src="images/pic4.jpg" onclick="openViewer(3)">
+  <img src="images/pic5.jpg" onclick="openViewer(4)">
+  <img src="images/pic6.jpg" onclick="openViewer(5)">
+  <img src="images/pic7.jpg" onclick="openViewer(6)">
+</div>
+
+<a class="btn" href="final.html">One Last Thing 🎨💖</a>
+<a class="btn back" href="index.html">← Back</a>
+
+<!-- Fullscreen Viewer -->
+<div id="viewer">
+  <span class="close" onclick="closeViewer()">×</span>
+  <img id="viewerImg">
+  <div class="caption">Swipe or tap ❤️</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

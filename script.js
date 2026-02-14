@@ -1,11 +1,11 @@
 const images = [
-  "images/pic1.jpg",
-  "images/pic2.jpg",
-  "images/pic3.jpg",
-  "images/pic4.jpg",
-  "images/pic5.jpg",
-  "images/pic6.jpg",
-  "images/pic7.jpg"
+  "pic1.jpg",
+  "pic2.jpg",
+  "pic3.jpg",
+  "pic4.jpg",
+  "pic5.jpg",
+  "pic6.jpg",
+  "pic7.jpg"
 ];
 
 let currentIndex = 0;
@@ -58,3 +58,4 @@ function prevImage() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   document.getElementById("viewerImg").src = images[currentIndex];
 }
+

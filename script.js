@@ -23,7 +23,7 @@ function startMusicAndGo() {
   const music = document.getElementById("bgMusic");
   music.play();
   localStorage.setItem("musicPlaying", "true");
-  window.location.href = "gallery.html";
+  window.location.href = "index.html";
 }
 
 // Viewer
@@ -58,4 +58,5 @@ function prevImage() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   document.getElementById("viewerImg").src = images[currentIndex];
 }
+
 
